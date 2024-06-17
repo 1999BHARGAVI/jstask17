@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+
+    <style>
+        label{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <img id="hh" src="" alt="shop" width="200px" height="200px">
+    
+     <label for="pani">panipuri</label>
+    <input type="radio" id="pani" name="pani" value="pani">
+    <label for="bal">bale puri</label>
+    <input type="radio" id="bal" name="bal" value="bal">
+
+
+
+    <script>
+       var img1=document.getElementById("hh")
+       img1.setAttribute("src","./img/hh.jpeg")
+
+       var img2=document.getElementById("pani");
+       img2.addEventListener("click",paani);
+       function paani(){
+        img1.setAttribute("src","./img/pani.jpeg")
+       }
+       var img2=document.getElementById("bal");
+       img2.addEventListener("click",bale);
+       function bale(){
+        img1.setAttribute("src","./img/bel.jpeg")
+       }
+    </script>
+
+</body>
+</html>
